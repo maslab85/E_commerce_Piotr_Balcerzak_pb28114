@@ -1,32 +1,19 @@
 <app-panel-top></app-panel-top>
-
-<button routerLink="/landing">Powrót</button>
-
-<div class="products">
-    <table style="margin:0 auto;" id="productsTable">
-        <thead *ngIf="this.mainService.products">
-            <tr>
-                <th>obrazek</th>
-                <th>dane</th>
-                <th>akcje</th>
-            </tr>
-        </thead>
-        <tbody>
-          <ng-container *ngFor="let product of this.mainService.products?.productsTable">
-            <tr style="background-color: whitesmoke;">
-              <td><img src="{{product.thumbnail}}" alt=""></td>
-                <td>
-                  <ul>
-                    <li>Tytuł: {{product.title}}</li>
-                    <li>Cena: {{product.price}}</li>
-                    <li>Kategoria: {{product.category}}</li>
-                  </ul>
-                </td>
-              <td>
-                <button (click)="addToCart(product)">Do koszyka</button>
-              </td>
-            </tr>
-          </ng-container>
-        </tbody>
-    </table>
+<br>
+<div id="main">
+  <br>
+      <div id="produkt" ng-container *ngFor="let product of this.mainService.products?.productsTable">
+        <div id="centrowanie"><img style="width: 180px;" src="{{product.thumbnail}}" alt=""></div>
+          <ul>
+            <li>Tytuł: {{product.title}}</li>
+            <li>Cena: {{product.price}} PLN</li>
+            <li>Kategoria: {{product.category}}</li>
+          </ul>
+        <div id="tocart" (click)="addToCart(product)">Do koszyka</div>
+      </div>
+      <br>
 </div>
+
+
+
+

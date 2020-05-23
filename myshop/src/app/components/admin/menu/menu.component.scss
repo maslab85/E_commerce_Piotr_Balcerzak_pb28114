@@ -1,0 +1,50 @@
+#menu{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  background-color:whitesmoke;
+  justify-content: center;
+  padding: 0px 5px 5 px 0px;
+}
+
+#przycisk{
+  height: 40px;
+  width: 150px;
+  background-color: cadetblue;
+  color: black;
+  padding:5px ;
+  text-align: center;
+  cursor: grab;
+  border-bottom-color: rgb(152, 207, 209);
+  border-width:3px;
+  border-bottom-style: solid;
+}
+#przycisk:hover{
+  background-color: rgb(135, 203, 212);
+  border-bottom-color: rgb(255, 255, 255);
+}
+
+#button
+{
+  height: 35px;
+  width: auto;
+  border:1px black;
+  background-color:whitesmoke;
+  cursor: grab;
+  font-size: small;
+  text-align: center;
+  padding:7px ;
+  border-bottom-color: rgb(152, 207, 209);
+  border-width:3px;
+  border-bottom-style: solid;
+
+}
+
+#button:hover{
+  background-color: rgb(135, 203, 212);
+  border-bottom-color: whitesmoke;
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
+}
+

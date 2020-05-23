@@ -1,0 +1,90 @@
+#logo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 120px;
+  background:rgb(152, 185, 196);
+  color: black;
+  font-size: 20px;
+  align-content: center;
+}
+
+#imput{
+  letter-spacing: 0.3rem;
+  color: #303133;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 20%;
+  display: block;
+  transition: all .3s;
+}
+
+#imput:hover {
+  border-bottom: 3px solid rgb(152, 185, 196);
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
+  background-color:whitesmoke;
+  cursor: pointer;
+}
+
+#admin
+{
+  opacity: 1%;;
+  height: 35px;
+  cursor: grab;
+  background-color:whitesmoke;
+  border: 4px;
+  font-size: small;
+  text-align: center;
+  padding:7px ;
+  border-bottom-color: rgb(152, 207, 209);
+  border-width:3px;
+  border-bottom-style: solid;
+  transition: all .3s;
+}
+
+#admin:hover{
+  opacity: 80%;
+  color: red;
+  border-bottom-color: rgb(255, 0, 0);
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
+}
+
+#button
+{
+  height: 35px;
+  width: auto;
+  border:1px black;
+  background-color:whitesmoke;
+  cursor: grab;
+  font-size: small;
+  text-align: center;
+  padding:7px ;
+  border-bottom-color: rgb(152, 207, 209);
+  border-width:3px;
+  border-bottom-style: solid;
+  transition: all .3s;
+}
+
+#button:hover{
+  background-color: rgb(135, 203, 212);
+  border-bottom-color: whitesmoke;
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
+}
+
+#menu{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  background-color:whitesmoke;
+  justify-content: center;
+  padding: 0px 5px 5 px 0px;
+}
+
+
+

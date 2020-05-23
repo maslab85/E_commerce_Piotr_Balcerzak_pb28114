@@ -1,0 +1,43 @@
+<app-menu></app-menu>
+<br><br>
+<div style="width: 600px;margin: 0 auto;"><div style="display: block">
+  <canvas baseChart
+  [datasets]="barChartData"
+  [labels]="barChartLabels"
+  [options]="barChartOptions"
+  [plugins]="barChartPlugins"
+  [legend]="barChartLegend"
+  [chartType]="barChartType">
+  </canvas>
+</div>
+<br><br>
+<div style="display: flex;flex-direction: row;">
+  <div class="content" style="width: 100%;">
+    <div class="content-container">
+      <table style="margin: 0 auto;">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Email</th>
+            <th>Telefon</th>
+            <th>Cena</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of this.mainService.orders?.orders">
+            <th>{{order.id}}</th>
+            <th>{{order.first_name}}</th>
+            <th>{{order.last_name}}</th>
+            <th>{{order.email}}</th>
+            <th>{{order.phone}}</th>
+            <th>{{order.price}}</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+

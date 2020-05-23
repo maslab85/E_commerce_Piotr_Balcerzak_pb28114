@@ -1,26 +1,6 @@
 <app-panel-top></app-panel-top>
-<div class="products" id="productsTable">
-  <table style="margin:0 auto;" id="cartTable">
-    <thead *ngIf="this.mainService.products">
-      <tr>
-        <th>obrazek</th>
-        <th>dane</th>
-      </tr>
-    </thead>
-    <tbody>
-      <ng-container *ngFor="let object of this.mainService.cart">
-        <tr style="background-color: whitesmoke;">
-          <td><img src="{{object.product.thumbnail}}" alt=""></td>
-          <td><ul><li>Tytuł: {{object.product.title}}</li>
-          <li>Cena: {{object.product.price}}</li>
-          <li>Kategoria: {{object.product.category}}</li>
-        </ul>
-      </td>
-    </tr></ng-container></tbody>
-  </table>
-  <div class="summary" id="papPal"><p>Do zapłaty: {{getCartPrice()}}</p>
-  </div>
-  <div class="payment">
+<div id="basket">
+  <div class="payment" style="margin-left: auto;margin-right: auto;">
     <div id="paypal">
       <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg">
     </div>
@@ -35,5 +15,21 @@
       <label for="">Akceptuję regulamin:<input #regulamin type="checkbox" name="aggrement" id="" (change)="0"></label>
       <button [disabled]="!regulamin.checked" (click)="paymentForm.submit()">Kup</button>
     </form>
+
+  <div class="products" id="productsTable">
+    <div class="summary" id="papPal"><h1>Do zapłaty:</h1><p>{{getCartPrice()}} PLN</p>
   </div>
 </div>
+</div>
+</div>
+
+<div id="baskecik" ng-container *ngFor="let object of this.mainService.cart">
+    <img style="width: 180px;" src="{{object.product.thumbnail}}" alt="">
+      <ul>
+        <li>Tytuł: {{object.product.title}}</li>
+        <li>Cena: {{object.product.price}}</li>
+        <li>Kategoria: {{object.product.category}}</li>
+      </ul>
+</div>
+
+

@@ -1,8 +1,45 @@
-#productsTable{
-  img{
-    width: 180px;
-  }
-  td{
-    padding: 20px;
-  }
+#main {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: column ;
+}
+
+#produkt{
+  width: 320px;
+  height: 450;
+  background-color:rgb(152, 185, 196);
+  border-radius: 3px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding: 20px ;
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
+  transition: all .3s;
+}
+
+#produkt:hover{
+  background-color: rgb(210, 228, 235);
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
+}
+
+#tocart{
+  margin-right: auto;
+  margin-left: auto;
+  height: 35px;
+  width: 94px;
+  background-color: rgb(135, 203, 212);
+  padding: 7px ;
+  border-radius: 2px;
+  border: 2px solid red;
+}
+#tocart:hover{
+  background-color: whitesmoke;
+}
+
+#centrowanie{
+  margin-left: auto;
+  margin-left: auto;
+  text-align: center;
 }

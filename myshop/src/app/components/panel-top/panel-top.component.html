@@ -1,13 +1,10 @@
-<div>
-    <div style="display: flex;flex-direction: row;">
-        <img src="https://via.placeholder.com/100" alt="">
-        <h2>Sklep z softłerem</h2>
-    </div>
-    <div style="display: flex; justify-content: center;">
-        <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
-        <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
-    </div>
-    <div>
-      <button id="cartBtn" routerLink="/cart">{{getCartQuanity()}}</button>
-    </div>
-</div>
+<div id="logo"><img src="./logo.png"></div>
+  <div id="menu">
+    <div id="button" routerLink="/landing">Powrót</div>
+    <div id="button" (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj<i class="fas fa-search"></i></div>
+    <input id="imput" [(ngModel)]="this.mainService.productsRequest.name" placeholder="Nazwa produktu">
+    <div id="button" routerLink="/cart">Koszyk {{getCartQuanity()}}</div>
+    <div id="admin" routerLink="/adm_dashboard">Admin</div>
+  </div>
+
+
