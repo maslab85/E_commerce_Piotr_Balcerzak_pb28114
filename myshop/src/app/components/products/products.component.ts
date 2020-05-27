@@ -21,4 +21,5 @@ export class ProductsComponent implements OnInit {
     console.log('Dodano do koszyka produkt');
     console.log(product);
   }
+
 }

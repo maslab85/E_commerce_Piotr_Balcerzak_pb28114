@@ -21,7 +21,7 @@
 
 #produkt:hover{
   background-color: rgb(210, 228, 235);
-  box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
+
 }
 
 #tocart{
@@ -29,13 +29,16 @@
   margin-left: auto;
   height: 35px;
   width: 94px;
-  background-color: rgb(135, 203, 212);
+  background-color: rgb(152, 185, 196);;
   padding: 7px ;
   border-radius: 2px;
-  border: 2px solid red;
+  border: 1px solid;
+  cursor: pointer;
 }
 #tocart:hover{
   background-color: whitesmoke;
+  border:2px;
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
 }
 
 #centrowanie{

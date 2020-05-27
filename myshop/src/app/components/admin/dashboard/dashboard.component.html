@@ -1,6 +1,7 @@
 <app-menu></app-menu>
 <br><br>
-<div style="width: 600px;margin: 0 auto;"><div style="display: block">
+<div style="width: 80%;margin: 0 auto;">
+  <div style="display: block">
   <canvas baseChart
   [datasets]="barChartData"
   [labels]="barChartLabels"
@@ -20,8 +21,7 @@
             <th>ID</th>
             <th>Imię</th>
             <th>Nazwisko</th>
-            <th>Email</th>
-            <th>Telefon</th>
+            <th>Data</th>
             <th>Cena</th>
           </tr>
         </thead>
@@ -30,9 +30,8 @@
             <th>{{order.id}}</th>
             <th>{{order.first_name}}</th>
             <th>{{order.last_name}}</th>
-            <th>{{order.email}}</th>
-            <th>{{order.phone}}</th>
-            <th>{{order.price}}</th>
+            <th>{{order.date_end}}</th>
+            <th>{{order.price}} PLN</th>
           </tr>
         </tbody>
       </table>

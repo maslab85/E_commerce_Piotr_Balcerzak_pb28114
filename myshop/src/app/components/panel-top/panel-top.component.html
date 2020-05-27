@@ -1,7 +1,11 @@
-<div id="logo"><img src="./logo.png"></div>
+<div id="logo">
+  <div style="margin-left: auto;margin-right: auto; width: 225px;">
+    <img src="../../../assets/logo.png">
+  </div>
+</div>
   <div id="menu">
     <div id="button" routerLink="/landing">Powrót</div>
-    <div id="button" (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj<i class="fas fa-search"></i></div>
+    <div id="button" (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj</div>
     <input id="imput" [(ngModel)]="this.mainService.productsRequest.name" placeholder="Nazwa produktu">
     <div id="button" routerLink="/cart">Koszyk {{getCartQuanity()}}</div>
     <div id="admin" routerLink="/adm_dashboard">Admin</div>

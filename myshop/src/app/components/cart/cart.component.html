@@ -5,17 +5,16 @@
       <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg">
     </div>
     <form action="http://www.jakubadamus.cba.pl/paypal.php" method="get" #paymentForm>
-      <input type="text" #firstName name="firstName" id="" placeholder="Imie"><br>
-      <input type="text" #lastName name="lastName" id="" placeholder="Nazwisko"><br>
-      <input type="text" #email name="email" id="" placeholder="Email"><br>
-      <input type="text" name="phone" id="" placeholder="Telefon"><br>
+      <input id="imput" type="text" #firstName name="firstName"  placeholder="Imie"><br>
+      <input id="imput" type="text" #lastName name="lastName"  placeholder="Nazwisko"><br>
+      <input id="imput" type="text" #email name="email"  placeholder="Email"><br>
+      <input id="imput" type="text" name="phone" placeholder="Telefon"><br>
       <ng-container *ngFor="let object of this.mainService.cart">
       <input type="hidden" name="products[]" value="{{ object | json }}">
       </ng-container>
-      <label for="">Akceptuję regulamin:<input #regulamin type="checkbox" name="aggrement" id="" (change)="0"></label>
-      <button [disabled]="!regulamin.checked" (click)="paymentForm.submit()">Kup</button>
+      <label for="">Akceptuję regulamin:<input id="imput"#regulamin type="checkbox" name="aggrement" id="" (change)="0"></label>
+      <button id="but" [disabled]="!regulamin.checked" (click)="paymentForm.submit()">Kup</button>
     </form>
-
   <div class="products" id="productsTable">
     <div class="summary" id="papPal"><h1>Do zapłaty:</h1><p>{{getCartPrice()}} PLN</p>
   </div>
@@ -24,7 +23,7 @@
 </div>
 
 <div id="baskecik" ng-container *ngFor="let object of this.mainService.cart">
-    <img style="width: 180px;" src="{{object.product.thumbnail}}" alt="">
+    <div id="centrowanie"><img style="width: 180px;" src="{{object.product.thumbnail}}" alt=""></div>
       <ul>
         <li>Tytuł: {{object.product.title}}</li>
         <li>Cena: {{object.product.price}}</li>

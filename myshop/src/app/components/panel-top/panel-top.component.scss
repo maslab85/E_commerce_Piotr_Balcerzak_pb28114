@@ -1,3 +1,4 @@
+
 #logo{
   margin-left: auto;
   margin-right: auto;
@@ -6,6 +7,7 @@
   background:rgb(152, 185, 196);
   color: black;
   font-size: 20px;
+  padding: 10px;
   align-content: center;
 }
 
@@ -43,10 +45,11 @@
   border-bottom-color: rgb(152, 207, 209);
   border-width:3px;
   border-bottom-style: solid;
-  transition: all .3s;
+  transition: all 5s;
 }
 
 #admin:hover{
+  cursor: pointer;
   opacity: 80%;
   color: red;
   border-bottom-color: rgb(255, 0, 0);
@@ -70,6 +73,7 @@
 }
 
 #button:hover{
+  cursor: pointer;
   background-color: rgb(135, 203, 212);
   border-bottom-color: whitesmoke;
   box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);

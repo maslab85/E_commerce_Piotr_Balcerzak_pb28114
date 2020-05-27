@@ -9,10 +9,14 @@
   border-radius: 4px;
   box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
   transition: all .3s;
+  letter-spacing: 0.3rem;
+  color: #303133;
+  padding: 1.5rem 2rem;
+  font-size: 1.3rem;
+  font-family: inherit;
 }
 #baskecik:hover{
   background-color: rgb(210, 228, 235);
-  width: 360px;
 }
 #payPal{
   align-items: center;
@@ -34,3 +38,47 @@
   box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
 }
 
+#centrowanie{
+  margin-left: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#imput{
+  letter-spacing: 0.3rem;
+  color: #303133;
+  padding: 1.5rem 2rem;
+  font-size: 1.3rem;
+  font-family: inherit;
+  //background-color: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all .3s;
+}
+
+#imput:hover {
+  border-bottom: 3px solid rgb(152, 185, 196);
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0, .15);
+  background-color:whitesmoke;
+  cursor: pointer;
+}
+
+#but
+{
+  background-color: whitesmoke;
+  border: 1px line;
+  color: black;
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#but:hover{
+  background-color: rgb(152, 185, 196);
+
+}
