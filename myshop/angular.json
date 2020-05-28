@@ -122,6 +122,14 @@
               "devServerTarget": "myshop:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/myshop",
+            "netlifyToken": "",
+            "siteId": "055c468d-c268-4c86-aa4a-1e515ac6cea2"
+          }
         }
       }
     }
